@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f3460" />
+    <meta name="description" content="AI-powered weather forecast dashboard with personalized insights" />
+    <title>AI Weather Dashboard 🌤️</title>
+    <!-- Tailwind CDN for PostCSS processing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'slide-up': 'slideUp 0.4s ease-out',
+              'pulse-slow': 'pulse 3s infinite',
+            },
+            keyframes: {
+              fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+              slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Inter', sans-serif; }
+      .glass { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+      .glass-dark { background: rgba(0,0,0,0.25); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+      .bg-weather-clear { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+      .bg-weather-clouds { background: linear-gradient(135deg, #6B6B83 0%, #8B8B9E 100%); }
+      .bg-weather-rain { background: linear-gradient(135deg, #373B44 0%, #4286f4 100%); }
+      .bg-weather-snow { background: linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%); }
+      .bg-weather-storm { background: linear-gradient(135deg, #232526 0%, #414345 100%); }
+      .bg-weather-default { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+      ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
+      @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+      .skeleton { background: linear-gradient(90deg, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
