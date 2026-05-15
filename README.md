@@ -20,7 +20,6 @@
 | 🏃 **Activities** | What to do (or avoid) today |
 | ⭐ **Favorites** | Save up to 10 favorite cities |
 | 🕐 **Search History** | Last 10 searched cities |
-| 📍 **Geolocation** | Auto-detect your location |
 
 ---
 
@@ -172,12 +171,11 @@ npm start
 ## 🎮 How to Use
 
 1. **Search a city** — Type any city name and press Search (or Enter)
-2. **Use your location** — Click the 📍 pin icon to auto-detect
-3. **View weather** — See temperature, humidity, wind, pressure, visibility
-4. **Check forecast** — Switch between 5-day and hourly tabs
-5. **Read AI insights** — Scroll down for clothing, food, safety & activity tips
-6. **Register/Login** — Click "Login / Register" to create an account
-7. **Save favorites** — Click ⭐ star on any weather card to save the city
+2. **View weather** — See temperature, humidity, wind, pressure, visibility
+3. **Check forecast** — Switch between 5-day and hourly tabs
+4. **Read AI insights** — Scroll down for clothing, food, safety & activity tips
+5. **Register/Login** — Click "Login / Register" to create an account
+6. **Save favorites** — Click ⭐ star on any weather card to save the city
 ---
 
 ## 🔌 API Endpoints Reference
@@ -260,22 +258,6 @@ npm start
 
 **CORS error in browser**
 → Make sure `FRONTEND_URL` in your backend `.env` matches exactly where your frontend runs.
-
----
-
-## 📸 Screenshots Section
-
-> Add your screenshots here after running the app!
-
-```
-screenshots/
-├── home-screen.png
-├── weather-result.png
-├── ai-insights.png
-├── dark-mode.png
-└── mobile-view.png
-```
-
 ---
 
 ## 🧰 Tech Stack Summary
