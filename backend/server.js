@@ -17,10 +17,9 @@ const app = express();
 
 // Allow requests from your frontend
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: "https://ai-weather-app-ztsa.vercel.app",
   credentials: true
 }));
-
 // Parse incoming JSON data
 app.use(express.json());
 
