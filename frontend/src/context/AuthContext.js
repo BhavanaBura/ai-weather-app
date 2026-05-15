@@ -11,7 +11,7 @@ import axios from 'axios';
 const AuthContext = createContext();
 
 // Base API URL from environment variable
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL;
 
 // ---- AUTH PROVIDER COMPONENT ----
 // Wrap your app with this to provide auth state everywhere
