@@ -21,7 +21,6 @@
 | ⭐ **Favorites** | Save up to 10 favorite cities |
 | 🕐 **Search History** | Last 10 searched cities |
 | 📍 **Geolocation** | Auto-detect your location |
-| 🌙 **Dark Mode** | Toggle dark/light theme |
 
 ---
 
@@ -179,8 +178,6 @@ npm start
 5. **Read AI insights** — Scroll down for clothing, food, safety & activity tips
 6. **Register/Login** — Click "Login / Register" to create an account
 7. **Save favorites** — Click ⭐ star on any weather card to save the city
-8. **Dark mode** — Click 🌙 moon icon to switch themes
-
 ---
 
 ## 🔌 API Endpoints Reference
